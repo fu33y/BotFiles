@@ -1,0 +1,103 @@
+{
+  "command": [
+    {
+      "name": "test",
+      "perms": [],
+      "actions": [
+        {
+          "name": "embed",
+          "category": "Message",
+          "type": "Send Embed",
+          "fields": [
+            {
+              "name": "YouTube",
+              "value": "https://www.youtube.com/channel/UCOe-TPSJcvGlutJ40fWvXlw",
+              "inline": "true"
+            },
+            {
+              "name": "Info",
+              "value": "Make sure to Like and Subscribe!",
+              "inline": "true"
+            }
+          ],
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandAuthor.user.dmChannel}",
+          "color": "FF0000",
+          "title": "YouTube",
+          "url": "",
+          "authorname": "RoSploits",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "This is the RoSploits Official YouTube channel where we upload daily!",
+          "thumbnail": "https://yt3.ggpht.com/80TCRz8oganpi5zuU_JbsakXZ6UCICPm-JorH9AcAUeFbnrQheF-4_fcxUOn99TXYZNNq-aeQd0=s900-c-k-c0x00ffffff-no-rj",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "botdnd",
+      "perms": [],
+      "actions": [
+        {
+          "name": "set",
+          "category": "Bot Action",
+          "type": "Set Bot Status",
+          "messageActionRows": [],
+          "presencestatus": "dnd"
+        }
+      ]
+    },
+    {
+      "name": "boton",
+      "actions": [
+        {
+          "name": "on",
+          "category": "Bot Action",
+          "type": "Set Bot Status",
+          "messageActionRows": [],
+          "presencestatus": "online"
+        }
+      ]
+    },
+    {
+      "name": "ban",
+      "actions": []
+    },
+    {
+      "name": "kick",
+      "actions": [
+        {
+          "name": "get user to kick",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "kickuser",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "get reason",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "kickreason",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "0"
+        },
+        {
+          "name": "kick them",
+          "category": "User Action",
+          "type": "Kick User",
+          "messageActionRows": [],
+          "user": "${tempVars.kickuser.id}",
+          "reason": "${tempVars.kickreason}"
+        }
+      ]
+    }
+  ]
+}

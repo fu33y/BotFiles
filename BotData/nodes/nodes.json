@@ -1,0 +1,350 @@
+{
+  "nodes": [
+    {
+      "type": "command",
+      "name": "test",
+      "guid": "3fdecbc2-0667-45ae-856a-bb8d453926c8",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "5d5038a6-f7c7-4fd7-8ad6-c40bd157c33c"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 250,
+      "y": 250,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "embed",
+      "guid": "5d5038a6-f7c7-4fd7-8ad6-c40bd157c33c",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": "YouTube",
+          "value": "https://www.youtube.com/channel/UCOe-TPSJcvGlutJ40fWvXlw",
+          "inline": "true"
+        },
+        {
+          "name": "Info",
+          "value": "Make sure to Like and Subscribe!",
+          "inline": "true"
+        }
+      ],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "3fdecbc2-0667-45ae-856a-bb8d453926c8"
+        }
+      ],
+      "x": 425,
+      "y": 249,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandAuthor.user.dmChannel}",
+        "FF0000",
+        "YouTube",
+        "",
+        "RoSploits",
+        "",
+        "",
+        "This is the RoSploits Official YouTube channel where we upload daily!",
+        "https://yt3.ggpht.com/80TCRz8oganpi5zuU_JbsakXZ6UCICPm-JorH9AcAUeFbnrQheF-4_fcxUOn99TXYZNNq-aeQd0=s900-c-k-c0x00ffffff-no-rj",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "botdnd",
+      "guid": "c19311a2-fd0e-4f12-acc4-07d915e9084a",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "e0b82ea7-3e5b-4dbf-9e2a-2f928d911e16"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 242,
+      "y": 380,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "set",
+      "guid": "e0b82ea7-3e5b-4dbf-9e2a-2f928d911e16",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c19311a2-fd0e-4f12-acc4-07d915e9084a"
+        }
+      ],
+      "x": 417,
+      "y": 375,
+      "rtype": "Bot Action",
+      "rsubtype": "Set Bot Status",
+      "formdata": [
+        "dnd"
+      ],
+      "formnames": [
+        "presencestatus"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "boton",
+      "guid": "3c5b142e-694a-4c29-84dd-5c77a35e9729",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "00638eab-0b5f-4247-a29d-69923baef65d"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 241,
+      "y": 498
+    },
+    {
+      "type": "response",
+      "name": "on",
+      "guid": "00638eab-0b5f-4247-a29d-69923baef65d",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "3c5b142e-694a-4c29-84dd-5c77a35e9729"
+        }
+      ],
+      "x": 419,
+      "y": 497,
+      "rtype": "Bot Action",
+      "rsubtype": "Set Bot Status",
+      "formdata": [
+        "online"
+      ],
+      "formnames": [
+        "presencestatus"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "ban",
+      "guid": "d75d996e-3fbe-4180-aa99-6c03571a3b4c",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "1b39782c-0e73-441a-89fc-3ed84524a293"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 241,
+      "y": 631
+    },
+    {
+      "type": "response",
+      "name": "bye",
+      "guid": "1b39782c-0e73-441a-89fc-3ed84524a293",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d75d996e-3fbe-4180-aa99-6c03571a3b4c"
+        }
+      ],
+      "x": 421,
+      "y": 630,
+      "rtype": "User Action",
+      "rsubtype": "Ban User",
+      "messageActionRows": []
+    },
+    {
+      "type": "command",
+      "name": "kick",
+      "guid": "5af7fbd1-23e0-46d4-93f4-b92f2edd3270",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "560298b2-b47c-464d-96ec-4b2d5bcd4d43"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 246,
+      "y": 849
+    },
+    {
+      "type": "response",
+      "name": "get user to kick",
+      "guid": "560298b2-b47c-464d-96ec-4b2d5bcd4d43",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "0687a33c-7874-499e-99a7-b30d1b22a895"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5af7fbd1-23e0-46d4-93f4-b92f2edd3270"
+        }
+      ],
+      "x": 437,
+      "y": 849,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "kickuser",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "get reason",
+      "guid": "0687a33c-7874-499e-99a7-b30d1b22a895",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "kickreason",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "736ccce9-3552-4d8f-ad2c-37507b19cdc8"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "560298b2-b47c-464d-96ec-4b2d5bcd4d43"
+        }
+      ],
+      "x": 629,
+      "y": 857,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "kickreason",
+        "Text",
+        "temp",
+        "0"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "kick them",
+      "guid": "736ccce9-3552-4d8f-ad2c-37507b19cdc8",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0687a33c-7874-499e-99a7-b30d1b22a895"
+        }
+      ],
+      "x": 814,
+      "y": 862,
+      "rtype": "User Action",
+      "rsubtype": "Kick User",
+      "formdata": [
+        "${tempVars.kickuser.id}",
+        "${tempVars.kickreason}"
+      ],
+      "formnames": [
+        "user",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    }
+  ]
+}
